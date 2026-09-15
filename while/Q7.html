@@ -1,0 +1,17 @@
+<script>
+    let n = Number(prompt('Digite um número (digite -1 para encerrar)'))
+    let n_menor = 999999999999
+    while(n != -1){
+        if(n < 0){
+            break
+        }
+            if(n < n_menor){
+                n_menor = n
+            } n = Number(prompt('Digite outro número (-1 para sair)'))
+
+    } if (n_menor === 999999999999){
+        document.write("Você encerrou o programa")
+    } else {
+        document.write(`O menor número é: ${n_menor}`)
+    }
+</script>

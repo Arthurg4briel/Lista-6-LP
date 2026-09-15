@@ -1,3 +1,15 @@
 <script>
-    
+    let n = Number(prompt("Informe um número (digite -1 para parar)"))
+    let n_menor
+    let n_maior = -2000
+    while (n != -1){
+        if (n > n_maior){
+            n_maior = n
+        } n = Number(prompt("Digite outro valor (-1 pra sair)"))
+    } 
+    if(n_maior === -2000){
+        alert("Você encerrou o programa")
+    } else {
+        document.write("O maior valor digitado foi: " + n_maior)
+    }
 </script>
