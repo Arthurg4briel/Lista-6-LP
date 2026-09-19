@@ -1,0 +1,13 @@
+<script>
+    let menor = 99999;
+    let digitou = false;
+    for(let num = Number(prompt("Digite um número positivo (-1 para encerrar):")); num !== -1; num = Number(prompt("Digite um número positivo (-1 para encerrar):"))) {
+        digitou = true;
+        if(num < menor) menor = num;
+    }
+    if(digitou) {
+        document.write(`O menor valor digitado foi: ${menor}`);
+    } else {
+        document.write("Nenhum valor válido foi digitado.");
+    }
+</script>

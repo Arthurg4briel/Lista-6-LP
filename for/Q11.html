@@ -1,0 +1,9 @@
+<script>
+    let count = 0;
+    for(let num = Number(prompt("Digite um número (0 para encerrar):")); num !== 0; num = Number(prompt("Digite um número (0 para encerrar):"))){
+        if(num % 3 === 0) {
+            count++;
+        }
+    }
+    document.write(`Foram digitados ${count} números divisíveis por 3.`);
+</script>

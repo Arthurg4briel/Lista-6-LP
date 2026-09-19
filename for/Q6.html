@@ -1,9 +1,7 @@
 <script>
     let maior = -Infinity;
-    let num = Number(prompt("Digite um valor (-1 para encerrar):"));
-    while(num !== -1) {
+    for(let num = Number(prompt("Digite um valor (-1 para encerrar):")); num !== -1; num = Number(prompt("Digite um valor (-1 para encerrar):"))) {
         if(num > maior) maior = num;
-        num = Number(prompt("Digite um valor (-1 para encerrar):"));
     }
     if(maior !== -Infinity) {
         document.write(`O maior valor digitado foi: ${maior}`);

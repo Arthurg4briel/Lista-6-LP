@@ -1,11 +1,9 @@
 <script>
     let soma = 0;
     let count = 0;
-    let num = Number(prompt("Digite um valor positivo (negativo para encerrar):"));
-    while(num >= 0) {
+    for(let num = Number(prompt("Digite um valor positivo (negativo para encerrar):")); num >= 0; num = Number(prompt("Digite um valor positivo (negativo para encerrar):"))) {
         soma += num;
         count++;
-        num = Number(prompt("Digite um valor positivo (negativo para encerrar):"));
     }
     let media = count > 0 ? soma / count : 0;
     document.write(`A média é: ${media}`);

@@ -1,9 +1,11 @@
 <script>
     let count = 0;
     let num = Number(prompt("Digite um número (0 para encerrar):"));
-    while(num !== 0) {
-        count++;
+    while(num !== 0){
+        if(num >= 100 && num <= 200) {
+            count++;
+        }
         num = Number(prompt("Digite um número (0 para encerrar):"));
     }
-    document.write(`Quantidade de números digitados: ${count}`);
+    document.write(`Foram digitados ${count} números entre 100 e 200.`);
 </script>

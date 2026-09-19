@@ -1,0 +1,27 @@
+<script>
+    let soma = 0;
+    let count = 0;
+    let produto = 1;
+    let menor = 99999;
+    let maior = -Infinity;
+    
+    for(let num = Number(prompt("Digite um número (0 para encerrar):")); num !== 0; num = Number(prompt("Digite um número (0 para encerrar):"))){
+        count++;
+        soma += num;
+        produto *= num;
+        if(num < menor) menor = num;
+        if(num > maior) maior = num;
+    }
+    
+    if(count > 0){
+        let media = soma / count;
+        document.write(`Foram digitados ${count} números e o resultado foi:<br>`);
+        document.write(`Soma: ${soma}<br>`);
+        document.write(`Média: ${media}<br>`);
+        document.write(`Produto: ${produto}<br>`);
+        document.write(`Menor: ${menor}<br>`);
+        document.write(`Maior: ${maior}<br>`);
+    } else {
+        document.write("Nenhum número foi digitado.");
+    }
+</script>
